@@ -5,80 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projecr2</title>
-    <style>
-        body{
-            margin:0px;
-            padding:0px;
-            background-color: black;
-            color:white;
-          
-        }
-
-        header::before{
-            background: url('https://img4.goodfon.com/original/1366x768/e/e7/fastfud-gamburger-ovoshchi-ogon-dvoe-eda.jpg?d=1') no-repeat center center/cover ;
-            content:"";
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            z-index:-1;
-            opacity:0.5;
-
-        }
-
-        section{
-            margin:44px 25px;
-             display:flex;
-             flex-direction:column;
-             text-align: center;
-             
-             height:344px;
-             justify-content: center;
-        }
-
-      
-        .navigation{
-            display:flex;
-            font-size: 20px;
-        }
-
-        li{
-            list-style:none;
-            padding:34px 23px; 
-            
-        }
-        h1{
-            font-size: 90px;
-        }
-        p{
-            font-size:30px;
-            font-family:'Times New Roman', Times, serif;
-            margin: -39px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" media="screen and(max-width:2643px)" href="phone.css"> -->
+    
 </head>
 <body>
-    <header>
-      <nav class="navbar">
-        <ul class="navigation">
-            <li class="item">Home</li>
-            <li class="item">Log in</li>
-            <li class="item">Sign up</li>
-            <li class="item">About us</li>
-            <li class="item">Contact Us</li>
-        </ul>
-      </nav>
-    </header>
-      <hr>
-      <section>
-        <h1>Welcome to Moody's</h1>
-        <p>Spice up your taste with Moody's</p>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="https://img.freepik.com/premium-vector/indian-chef-mascot_138200-103.jpg?w=740">
+      </div>   
+
+      <ul>
+        <li class="item"><a href="index2.html">Home</a></li>
+        <li class="item"><a href="#">Sign in</a></li>
+        <li class="item"><a href="#">Sign up</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">Contact us</a></li>
+     </nav>
+
+     <section id="home">
+      <h1 class="h-primary">Welcome to Moody's</h1>
+      <p>Let's Taste the Taste</p>
+      <button class="btn">Order Now</button>
+     </section>
         
-      </section>
-   <!-- <img src="https://img4.goodfon.com/original/1366x768/e/e7/fastfud-gamburger-ovoshchi-ogon-dvoe-eda.jpg?d=1"> -->
-     
-    
+      <!-- <form>
+        <input placeholder="Search for restaurant, cuisine or a dish" class="search-icon" value="">
+       </form>  -->
+
+
+     <section id="services-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img src="https://images.pexels.com/photos/4109136/pexels-photo-4109136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi iure consequatur dolores, quasi doloribus voluptatem soluta, sit rerum nesciunt dolor praesentium cupiditate? Itaque praesentium aut a omnis modi, nulla aperiam!</p>
+        </div>
+
+        <div class="box">
+          <img src="https://images.pexels.com/photos/903376/pexels-photo-903376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <h2 class="h-secondary center">Popular Restaurants</h2>
+          <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi iure consequatur dolores, quasi doloribus voluptatem soluta, sit rerum nesciunt dolor praesentium cupiditate? Itaque praesentium aut a omnis modi, nulla aperiam!</p>
+        </div>
+
+        <div class="box">
+          <img src="https://images.pexels.com/photos/684968/pexels-photo-684968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <h2 class="h-secondary center">My Coupan's</h2>
+          <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi iure consequatur dolores, quasi doloribus voluptatem soluta, sit rerum nesciunt dolor praesentium cupiditate? Itaque praesentium aut a omnis modi, nulla aperiam!</p>
+        </div>
+      </div>
+     </section>
+
+     <section id="client-section">
+    <h1 class="h-primary center">Our Clients</h1>
+    <div id="clients">
+      <div class="client-item">
+          <img src="https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"alt="Our Client">
+      </div>
+      <div class="client-item">
+        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"alt="Our Client">
+    </div>
+    <div class="client-item">
+      <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"alt="Our Client">
+  </div>
+  <div class="client-item">
+    <img src="https://images.unsplash.com/photo-1633675254053-d96c7668c3b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"alt="Our Client">
+</div>
+<div class="client-item">
+  <img src="https://images.unsplash.com/photo-1572059002053-8cc5ad2f4a38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"alt="Our Client">
+</div>
+    </div>
+     </section>  
+     <hr>
+
+     <section id="Info">
+      <div class="info-all">
+        <div class="info1">
+          <div class="info2">
+            <div class="info-table">
+             <div class="company">COMPANY</div>
+               <ul class="list-company">
+                 <li class="tab1">
+                   <a class="tabcomp" href="/about" target="_blank">About</a>
+                 </li>
+                <li class="tab1">
+                  <a class="tabcomp" href="/about" target="_blank">Team</a>
+                </li>
+                <li class="tab1">
+                  <a class="tabcomp" href="/about" target="_blank">Carrers</a>
+                </li>
+                <li class="tab1">
+                  <a class="tabcomp" href="/about" target="_blank">Moody's Blog</a>
+                </li>
+                <li class="tab1">
+                  <a class="tabcomp" href="/about" target="_blank">Moody's Statement</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-table">
+              <div class="company">CONTACT</div>
+                <ul class="list-company">
+                  <li class="tab1">
+                    <a class="tabcomp" href="/about" target="_blank">Help & Support</a>
+                  </li>
+                 <li class="tab1">
+                   <a class="tabcomp" href="/about" target="_blank">Partner with us</a>
+                 </li>
+                 <li class="tab1">
+                   <a class="tabcomp" href="/about" target="_blank">Ride with us</a>
+                 </li>
+               </ul>
+             </div>
+            
+
+             <div class="info-table">
+              <div class="company">LEGAL</div>
+                <ul class="list-company">
+                  <li class="tab1">
+                    <a class="tabcomp" href="/about" target="_blank">Terms & Conditions</a>
+                  </li>
+                 <li class="tab1">
+                   <a class="tabcomp" href="/about" target="_blank">Refund & Cancellation</a>
+                 </li>
+                 <li class="tab1">
+                   <a class="tabcomp" href="/about" target="_blank">Privacy Policy</a>
+                 </li>
+                 <li class="tab1">
+                   <a class="tabcomp" href="/about" target="_blank">Offer Terms</a>
+                 </li>
+                 <li class="tab1">
+                   <a class="tabcomp" href="/about" target="_blank"> Phishing & Fraud</a>
+                 </li>
+               </ul>
+             </div>
+
+             <div class="down-logo">
+              <a href="" rel="nofollow noopener" alt target="_blank" class="iosapp" >
+                <img alt src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv" >
+              </a>
+
+              <a href="" rel="nofollow noopener" alt target="_blank" class="iosapp" >
+                <img alt src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl">
+              </a>
+             </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+      
+     </section>
+
+ 
 </body>
 </html>
