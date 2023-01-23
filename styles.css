@@ -1,50 +1,261 @@
-body{
-    margin:0px;
-    padding:0px;
-    background-color: black;
-    color:white;
+*{
+    margin: 0px;
+    padding: 0px;
+  }
   
-}
-
-header::before{
-    background: url('https://img4.goodfon.com/original/1366x768/e/e7/fastfud-gamburger-ovoshchi-ogon-dvoe-eda.jpg?d=1') no-repeat center center/cover ;
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    opacity:0.5;
-
-}
-
-section{
-    margin:44px 25px;
-     display:flex;
-     flex-direction:column;
-     text-align: center;
-     
-     height:344px;
-     justify-content: center;
-}
-
-
-.navigation{
+  /* Navigation bar */
+  #navbar{
     display:flex;
-    font-size: 20px;
+    align-items: center;
+    position:relative;
+    top:0px;
+  }
+
+  #navbar::before{
+    content:"";
+    background-color:black ;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  #logo{
+    margin: -21px 25px;
+  }
+
+  #logo img{
+    height:111px;
+    width:113px;
+    margin:25px -8px;
+  }
+
+  /* navigation bar logo and image */
+   
+  #navbar ul{
+    display:flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+  #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+  }
+
+  
+  #navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius:20px;
+    text-decoration: none;
+  }
+
+  
+  #navbar ul li a:hover{
+    color:black;
+   background-color: white;
+  }
+
+  /* home styling */
+  #home{
+   display: flex;
+   flex-direction: column;
+   padding: 150px 160px;
+   height: 272px;
+   justify-content: center;
+   align-items: center;
+  }
+
+  #home::before{
+    content:"";
+    background:url('https://images.pexels.com/photos/1556688/pexels-photo-1556688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover ;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 84%;
+    width: 100%;  
+    z-index: -1;
+    opacity: 0.90;
+  }
+
+   
+
+  #home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  #home p{
+    color:white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  /* services section */
+  #services{
+    margin:34px;
+    display: flex;
+  }
+  
+  #services .box{
+    border: 2px solid #8489cd;
+    padding: 31px;
+    margin: 4px;
+    border-radius: 20px;
+   background-color: #f9f5f5;
+  }
+  
+  #services .box img{
+    margin: auto;
+    display:block;
+    height: 207px;
+    width:328px;
+  }
+
+
+  /* client section */
+
+  
+
+  #clients{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+  }
+
+  #clients img{
+    height: 172px;
+    width: 201px;
+
+  }
+
+  .client-item{
+    padding:23px;
+    margin:23px;
+  }
+
+ /* Information Styling */
+  
+  .info-all{
+    padding: 0 20px;
+    z-index: 10;
+    background-color: #000;
+    min-height: 298px;
+    width: 100%;
+    color: #fff;
+    overflow: scroll;
+  }
+
+  .info1{
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 76px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
 }
 
-li{
-    list-style:none;
-    padding:34px 23px; 
-    
+.info2{
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4d4d4d;
+    -ms-flex-pack: justify;
+    /* justify-content: space-between; */
 }
-h1{
-    font-size: 90px;
+
+.info-table{
+    min-width: 300px;
 }
-p{
-    font-size:30px;
-    font-family:'Times New Roman', Times, serif;
-    margin: -39px;
+
+.company{
+    color: gray;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
+.list-company{
+    display:block;
+    margin-top: 30px;
+    list-style: none;
+    padding:2px;
+    font-size:27px;
+}
+
+.tab1{
+    margin-top: 14px;
+}
+
+.tabcomp{
+    color: inherit;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.down-logo{
+    width: 200px;
+}
+
+.iosapp{
+    margin-bottom: 30px;
+    display: block;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    will-change: transform;
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .5s cubic-bezier(.215,.61,.355,1);
+    -o-transition: transform .5s cubic-bezier(.215,.61,.355,1);
+    transition: transform .5s cubic-bezier(.215,.61,.355,1);
+    transition: transform .5s cubic-bezier(.215,.61,.355,1),-webkit-transform .5s cubic-bezier(.215,.61,.355,1);
+}
+ 
+
+  /* utility class */
+  .h-primary{
+    font-size:4rem;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .h-secondary{
+    font-size:2.8rem;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .btn{
+    padding:6px 20px;
+    font-size: 1.5rem;
+    margin: 23px ;
+    height: 66px;
+    width: 263px;
+    border: 2px solid black;
+    border-radius: 37px;
+    color: black;
+    background-color: rgb(245, 197, 7);
+    font-family: 'ProximaNova,arial,Helvetica Neue,sans-serif';
+    cursor: pointer;
+  }
+
+  .center{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+   
+ 
+   
+  
